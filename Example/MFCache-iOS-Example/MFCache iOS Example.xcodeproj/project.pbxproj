@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BE2BD48C169468F100145000 /* MFCache.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2BD483169468F100145000 /* MFCache.m */; };
+		BE2BD48E169468F100145000 /* MFCacheElement.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2BD485169468F100145000 /* MFCacheElement.m */; };
+		BE2BD490169468F100145000 /* MFCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2BD487169468F100145000 /* MFCacheManager.m */; };
+		BE2BD492169468F100145000 /* MFFileCachePlugin.m in Sources */ = {isa = PBXBuildFile; fileRef = BE2BD489169468F100145000 /* MFFileCachePlugin.m */; };
 		BEF948B0169046FE00B7DE75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF948AF169046FE00B7DE75 /* UIKit.framework */; };
 		BEF948B2169046FE00B7DE75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF948B1169046FE00B7DE75 /* Foundation.framework */; };
 		BEF948B4169046FE00B7DE75 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEF948B3169046FE00B7DE75 /* CoreGraphics.framework */; };
@@ -22,6 +26,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		BE2BD482169468F100145000 /* MFCache.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFCache.h; sourceTree = "<group>"; };
+		BE2BD483169468F100145000 /* MFCache.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFCache.m; sourceTree = "<group>"; };
+		BE2BD484169468F100145000 /* MFCacheElement.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFCacheElement.h; sourceTree = "<group>"; };
+		BE2BD485169468F100145000 /* MFCacheElement.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFCacheElement.m; sourceTree = "<group>"; };
+		BE2BD486169468F100145000 /* MFCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFCacheManager.h; sourceTree = "<group>"; };
+		BE2BD487169468F100145000 /* MFCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFCacheManager.m; sourceTree = "<group>"; };
+		BE2BD488169468F100145000 /* MFFileCachePlugin.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MFFileCachePlugin.h; sourceTree = "<group>"; };
+		BE2BD489169468F100145000 /* MFFileCachePlugin.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MFFileCachePlugin.m; sourceTree = "<group>"; };
 		BEF948AB169046FE00B7DE75 /* MFCache-iOS-Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MFCache-iOS-Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BEF948AF169046FE00B7DE75 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		BEF948B1169046FE00B7DE75 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -55,11 +67,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BE2BD481169468C300145000 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				BE2BD48A169468F100145000 /* MFCache */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		BE2BD48A169468F100145000 /* MFCache */ = {
+			isa = PBXGroup;
+			children = (
+				BE2BD482169468F100145000 /* MFCache.h */,
+				BE2BD483169468F100145000 /* MFCache.m */,
+				BE2BD484169468F100145000 /* MFCacheElement.h */,
+				BE2BD485169468F100145000 /* MFCacheElement.m */,
+				BE2BD486169468F100145000 /* MFCacheManager.h */,
+				BE2BD487169468F100145000 /* MFCacheManager.m */,
+				BE2BD488169468F100145000 /* MFFileCachePlugin.h */,
+				BE2BD489169468F100145000 /* MFFileCachePlugin.m */,
+			);
+			name = MFCache;
+			path = ../../MFCache;
+			sourceTree = "<group>";
+		};
 		BEF948A0169046FE00B7DE75 = {
 			isa = PBXGroup;
 			children = (
 				BEF948B5169046FE00B7DE75 /* MFCache-iOS-Example */,
 				BEF948AE169046FE00B7DE75 /* Frameworks */,
+				BE2BD481169468C300145000 /* Vendor */,
 				BEF948AC169046FE00B7DE75 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -138,7 +175,7 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 			};
-			buildConfigurationList = BEF948A5169046FE00B7DE75 /* Build configuration list for PBXProject "MFCache-iOS-Example" */;
+			buildConfigurationList = BEF948A5169046FE00B7DE75 /* Build configuration list for PBXProject "MFCache iOS Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -179,6 +216,10 @@
 				BEF948BC169046FE00B7DE75 /* main.m in Sources */,
 				BEF948C0169046FE00B7DE75 /* AppDelegate.m in Sources */,
 				BEF948C9169046FE00B7DE75 /* ViewController.m in Sources */,
+				BE2BD48C169468F100145000 /* MFCache.m in Sources */,
+				BE2BD48E169468F100145000 /* MFCacheElement.m in Sources */,
+				BE2BD490169468F100145000 /* MFCacheManager.m in Sources */,
+				BE2BD492169468F100145000 /* MFFileCachePlugin.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +312,7 @@
 				GCC_PREFIX_HEADER = "MFCache-iOS-Example/MFCache-iOS-Example-Prefix.pch";
 				INFOPLIST_FILE = "MFCache-iOS-Example/MFCache-iOS-Example-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -282,6 +324,7 @@
 				GCC_PREFIX_HEADER = "MFCache-iOS-Example/MFCache-iOS-Example-Prefix.pch";
 				INFOPLIST_FILE = "MFCache-iOS-Example/MFCache-iOS-Example-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				RUN_CLANG_STATIC_ANALYZER = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -289,7 +332,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		BEF948A5169046FE00B7DE75 /* Build configuration list for PBXProject "MFCache-iOS-Example" */ = {
+		BEF948A5169046FE00B7DE75 /* Build configuration list for PBXProject "MFCache iOS Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				BEF948D0169046FE00B7DE75 /* Debug */,
@@ -305,6 +348,7 @@
 				BEF948D4169046FE00B7DE75 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
