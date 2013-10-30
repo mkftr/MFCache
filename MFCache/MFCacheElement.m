@@ -47,7 +47,7 @@
     if (self.ttl == 0) return NO;
     
     NSTimeInterval currentTime = [NSDate timeIntervalSinceReferenceDate];
-    return (currentTime <= self.ttl);
+    return (currentTime > self.ttl);
 }
 
 - (void)encodeWithCoder:(NSCoder *)aCoder
