@@ -36,6 +36,7 @@
 + (void)setValue:(NSObject *)value forKey:(NSString *)key expiration:(NSTimeInterval)expiration
 {
     MFCacheElement *element = [[MFCacheElement alloc] initWithKey:key value:value];
+    [element setTimeToLive:expiration];
     [[MFCacheManager defaultManager] put:element];
 }
 
